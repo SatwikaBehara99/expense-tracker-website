@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>💰 Expense Tracker</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="budget.html">Budget Goals</a>
+      <a href="summary.html">Monthly Summary</a>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Enter Your Monthly Salary</h2>
+    <input type="number" id="salaryInput" placeholder="Enter salary" />
+    <button onclick="saveSalary()">Save Salary</button>
+
+    <div class="box">
+      <p>💵 Salary: ₹<span id="salaryAmount">0</span></p>
+      <p>💰 Savings: ₹<span id="savingsAmount">0</span></p>
+      <p>📊 Balance: ₹<span id="balanceAmount">0</span></p>
+    </div>
+
+    <h3>Add Expense</h3>
+    <input type="text" id="expenseName" placeholder="e.g. Food" />
+    <input type="number" id="expenseAmount" placeholder="e.g. 5000" />
+    <button onclick="addExpense()">Add Expense</button>
+
+    <h3>Set Savings</h3>
+    <input type="number" id="savingsInput" placeholder="e.g. 10000" />
+    <button onclick="saveSavings()">Save Savings</button>
+
+    <div class="history" id="expenseHistory"></div>
+
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

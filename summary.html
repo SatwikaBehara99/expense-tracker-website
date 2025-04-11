@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monthly Summary</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>📆 Monthly Summary</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="budget.html">Budget Goals</a>
+      <a href="summary.html">Monthly Summary</a>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>This Month</h2>
+    <p>Total Salary: ₹<span id="summarySalary">0</span></p>
+    <p>Total Savings: ₹<span id="summarySavings">0</span></p>
+    <p>Total Expenses: ₹<span id="summaryExpenses">0</span></p>
+    <div id="summaryList"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

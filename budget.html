@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget Goals</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="navbar">
+    <h1>🎯 Budget Tracker</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="budget.html">Budget Goals</a>
+      <a href="summary.html">Monthly Summary</a>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Set Your Budget Goals</h2>
+    <input type="text" id="goalName" placeholder="e.g. Groceries" />
+    <input type="number" id="goalAmount" placeholder="Target Amount" />
+    <button onclick="addBudgetGoal()">Add Goal</button>
+
+    <div class="goal-list" id="goalList"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
