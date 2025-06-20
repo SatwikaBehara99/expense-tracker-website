@@ -7,7 +7,7 @@ This is a beautifully designed, interactive, and fully functional multi-page exp
 
 ## 🚀 Live Preview
 
-🔗 [View Expense Tracker App](https://satwikabehara99.github.io/expense-tracker-website/) *(Update this with your actual live GitHub Pages link)*
+🔗 [View Expense Tracker App](https://satwikabehara99.github.io/expense-tracker-website/) 
 
 ---
 
